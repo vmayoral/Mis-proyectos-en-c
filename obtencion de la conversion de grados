@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	float C;
+	float F;
+	int numero;
+	
+	printf("Introduzca el numero que quiera convertir: %d", numero);
+	scanf("%d",&numero);
+	switch(numero)
+	{
+		case 1:
+			F = numero + 32;
+			printf("El numero introducido en grados Fahrenheit es: %f \n", F);
+			//se obtiene el numero en grados fahrenheit
+		case 2:
+			C = numero - 32;
+			printf("El numero introducido en grados Celsius es: %f \n", C);
+			//se obtiene el numero grados Celsius
+		default:
+			printf("Fin de programa \n");
+			
+	}
+	return 0;
+}
